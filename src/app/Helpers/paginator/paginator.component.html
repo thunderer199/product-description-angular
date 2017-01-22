@@ -1,0 +1,21 @@
+<div>
+
+  <ul>
+    <template ngFor [ngForOf]="items | slice:((currentPage - 1) * itemPerPage):(currentPage * itemPerPage)" [ngForTemplate]="template">
+    </template>
+  </ul>
+
+  <ul class="pagination">
+    <li [ngClass]="{disabled: currentPage === 1}" (click)="decrementPage()">
+      <a href="#">&laquo;</a>
+    </li>
+
+    <li class="page-numbers" *ngFor="let page of pagesList" (click)="setPage(page)" [ngClass]="{active: currentPage === page}">
+      <a href="#">{{page}}</a>
+    </li>
+
+    <li [ngClass]="{disabled: currentPage === pagesList.length}" (click)="incrementPage()">
+      <a href="#">&raquo;</a>
+    </li>
+  </ul>
+</div>
