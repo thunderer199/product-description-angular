@@ -1,0 +1,10 @@
+<div>
+  <span *ngIf="showText">{{currentRate}}/{{maxRate}}</span>
+
+  <div class="rate-stars">
+    <i class="glyphicon icon" *ngFor="let star of stars" (click)="setRate(star)"
+       [ngClass]="{'glyphicon-star-empty': star > currentRate, 'glyphicon-star': star <= currentRate}">
+    </i>
+  </div>
+
+</div>
