@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Author: {{review.created_by.username}}
+  </div>
+
+  <div class="panel-body">
+    <app-rate [currentRate]="review.rate" [maxRate]="maxRate"></app-rate>
+
+    <div class="text">{{review.text}}</div>
+  </div>
+</div>
