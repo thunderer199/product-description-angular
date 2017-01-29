@@ -1,5 +1,15 @@
 # TestLightIt
 
+For run in dev mode [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26 should be installed 
+and use ``ng start``
+
+For build use ``ng build`` and **copy env.json file to dist folder**
+
+Or visit:
+https://thunderer199.github.io/test-light-it/product/1
+
+-----
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
 ## Development server
