@@ -1,0 +1,19 @@
+<div>
+  <app-product-item [product]="product"></app-product-item>
+
+  <div class="compose" *ngIf="isLoggedIn()">
+    <h3>Create your review:</h3>
+
+    <app-review-compose (reviewAdded)="onUpdate()" [productId]="product.id"></app-review-compose>
+  </div>
+
+  <div class="review-footer">
+    <h4>Reviews:</h4>
+
+    <app-paginator [items]="reviews" [itemPerPage]="5">
+      <template let-item="$implicit">
+        <app-review [review]="item"></app-review>
+      </template>
+    </app-paginator>
+  </div>
+</div>
