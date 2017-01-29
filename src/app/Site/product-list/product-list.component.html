@@ -1,0 +1,5 @@
+<app-paginator [items]="products" [itemPerPage]="2">
+  <template let-item="$implicit">
+    <app-product-item (onSelect)="navigate(item)" [product]="item"></app-product-item>
+  </template>
+</app-paginator>
