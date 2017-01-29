@@ -1,0 +1,17 @@
+.review-compose {
+  width: 100%;
+}
+
+.rating-block {
+  display: block;
+}
+
+textarea.form-group {
+  width: 100%;
+}
+
+button.btn-primary[type=submit] {
+  width: 50%;
+  left: 25%;
+  position: relative;
+}

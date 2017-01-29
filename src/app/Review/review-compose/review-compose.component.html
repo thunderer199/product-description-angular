@@ -1,0 +1,15 @@
+<div class="review-compose">
+  <form novalidate (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="alert alert-danger" role="alert" *ngIf="errorMessage">{{errorMessage}}</div>
+
+    <label class="form-group rating-block">
+      Rating:
+      <app-rate [maxRate]="5" [readonly]="false" name="rate" [(ngModel)]="review.rate"
+                #rate=ngModel></app-rate>
+    </label>
+    <textarea class="form-group" name="text" cols="30" rows="10" placeholder="Enter your review"
+              required [(ngModel)]="review.text" #text=ngModel></textarea>
+
+    <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Send</button>
+  </form>
+</div>
