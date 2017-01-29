@@ -3,3 +3,8 @@
   position: relative;
   transform: translateX(-50%);
 }
+
+.content {
+  margin: 0;
+  padding: 0;
+}

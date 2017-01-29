@@ -1,6 +1,6 @@
 <div>
 
-  <ul>
+  <ul class="content">
     <template ngFor [ngForOf]="items | slice:((currentPage - 1) * itemPerPage):(currentPage * itemPerPage)" [ngForTemplate]="template">
     </template>
   </ul>
