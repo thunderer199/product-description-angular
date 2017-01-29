@@ -9,7 +9,7 @@
           <a routerLink="/login" routerLinkActive="active">Login</a>
         </li>
         <li *ngIf="!isLoggedIn()">
-          <a routerLink="/product" routerLinkActive="active">Register</a>
+          <a routerLink="/register" routerLinkActive="active">Register</a>
         </li>
         <li *ngIf="isLoggedIn()">
           <a (click)="logoff()">Logoff</a>
