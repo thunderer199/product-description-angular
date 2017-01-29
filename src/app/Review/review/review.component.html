@@ -1,6 +1,8 @@
 <div class="panel panel-default">
-  <div class="panel-heading">
-    Author: {{review.created_by.username}}
+  <div class="panel-heading clearfix">
+    <p class="pull-left">Author: {{review.created_by.username}}</p>
+
+    <p class="pull-right">Created at: {{review.created_at | date:'medium'}}</p>
   </div>
 
   <div class="panel-body">

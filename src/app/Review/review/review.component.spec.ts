@@ -33,6 +33,6 @@ describe('ReviewComponent', () => {
   it('should rendering data right', () => {
     const native = fixture.nativeElement;
     expect(native.querySelector('.text').innerText.trim()).toBe(review.text.trim());
-    expect(native.querySelector('.panel-heading').innerText.trim()).toBe(`Author: ${review.created_by.username.trim()}`);
+    expect(native.querySelector('.panel-heading > .pull-left').innerText.trim()).toBe(`Author: ${review.created_by.username.trim()}`);
   });
 });
