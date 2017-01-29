@@ -26,9 +26,10 @@ describe('AuthService', () => {
   let service: AuthService = null;
   let mock: MockBackend = null;
 
-  beforeEach(inject([AuthService, MockBackend], (authService: AuthService, mockBackend: MockBackend) => {
+  beforeEach(inject([AuthService, MockBackend, AppConfig], (authService: AuthService, mockBackend: MockBackend, appConfig: AppConfig) => {
     service = authService;
     mock = mockBackend;
+    appConfig.load();
   }));
 
   it('should return server message', async(() => {

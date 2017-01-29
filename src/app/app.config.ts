@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 export class AppConfig {
   protected _config: Object = null;
 
-  protected resolutionPromise: Observable<Response> = null;
+  protected responseObservable: Observable<Response> = null;
 
   constructor(protected http: Http) {
   }
@@ -16,7 +16,7 @@ export class AppConfig {
     if (this._config !== null) {
       return Observable.of(this._config[key]);
     } else {
-      return this.resolutionPromise
+      return this.responseObservable
         .map(r => r.json())
         .map(config => config[key]);
     }
@@ -25,7 +25,7 @@ export class AppConfig {
   load() {
     const src = this.http.get('env.json');
 
-    this.resolutionPromise = src;
+    this.responseObservable = src;
     return src.subscribe(resp => this._config = resp.json());
   }
 }

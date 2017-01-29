@@ -1,9 +1,6 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
-import { ProductItemComponent } from './product-item.component';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {ProductItemComponent} from './product-item.component';
 
 describe('ProductItemComponent', () => {
   let component: ProductItemComponent;
@@ -31,7 +28,6 @@ describe('ProductItemComponent', () => {
   });
 
   it('should create', () => {
-    console.log(component.product);
     expect(component).toBeTruthy();
   });
 

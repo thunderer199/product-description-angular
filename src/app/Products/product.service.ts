@@ -26,10 +26,7 @@ export class ProductService implements OnInit {
     // since serve doesn't support get by id operation, need to get all products
     return this.getProducts()
       .flatMap(r => r)
-      .filter(prod => {
-        console.log(prod);
-        return prod.id === id;
-      })
+      .filter(prod => prod.id === id)
       .first();
   }
 

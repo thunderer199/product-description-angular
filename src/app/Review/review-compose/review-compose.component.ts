@@ -2,7 +2,6 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {IReview} from '../Review';
 import {ReviewService} from '../review.service';
 import {NgForm} from '@angular/forms';
-import {isBoolean} from 'util';
 
 @Component({
   selector: 'app-review-compose',

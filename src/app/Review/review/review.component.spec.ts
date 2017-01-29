@@ -1,9 +1,6 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
-import { ReviewComponent } from './review.component';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {ReviewComponent} from './review.component';
 import {RateComponent} from '../rate/rate.component';
 
 describe('ReviewComponent', () => {

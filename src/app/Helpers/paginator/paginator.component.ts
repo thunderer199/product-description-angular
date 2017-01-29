@@ -20,7 +20,6 @@ export class PaginatorComponent implements OnChanges {
   }
 
   ngOnChanges(): void {
-    console.log(this.items.length, this.itemPerPage);
     const count = this.items.length / this.itemPerPage;
     this.pagesCount = Math.ceil(count);
     this.pagesList = range(this.pagesCount, 1);

@@ -1,4 +1,4 @@
-import {Component, OnInit, OnChanges, SimpleChanges} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {IProduct} from '../../Products/product';
 import {ActivatedRoute} from '@angular/router';
 import {IReview} from '../../Review/Review';

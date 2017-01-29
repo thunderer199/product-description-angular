@@ -1,9 +1,6 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
-import { ReviewComposeComponent } from './review-compose.component';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {ReviewComposeComponent} from './review-compose.component';
 
 describe('ReviewComposeComponent', () => {
   let component: ReviewComposeComponent;
@@ -22,7 +19,4 @@ describe('ReviewComposeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
