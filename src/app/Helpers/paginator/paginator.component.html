@@ -7,15 +7,15 @@
 
   <ul class="pagination">
     <li [ngClass]="{disabled: currentPage === 1}" (click)="decrementPage()">
-      <a href="#">&laquo;</a>
+      <a href="javascript:void(0)">&laquo;</a>
     </li>
 
     <li class="page-numbers" *ngFor="let page of pagesList" (click)="setPage(page)" [ngClass]="{active: currentPage === page}">
-      <a href="#">{{page}}</a>
+      <a href="javascript:void(0)">{{page}}</a>
     </li>
 
     <li [ngClass]="{disabled: currentPage === pagesList.length}" (click)="incrementPage()">
-      <a href="#">&raquo;</a>
+      <a href="javascript:void(0)">&raquo;</a>
     </li>
   </ul>
 </div>
