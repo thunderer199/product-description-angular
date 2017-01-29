@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <form novalidate (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <div class="alert alert-danger" role="alert" *ngIf="errorMessage">{{errorMessage}}</div>
+
+    <div>
+      <label class="form-group">
+        Login:
+        <input class="form-control" type="text" required
+               placeholder="Enter your login" name="username"
+               ngModel #username=ngModel>
+      </label>
+    </div>
+
+    <div>
+      <label class="form-group">
+        Password:
+        <input class="form-control" type="password" required
+               placeholder="Enter your password" name="password"
+               ngModel #password=ngModel>
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Save</button>
+  </form>
+</div>

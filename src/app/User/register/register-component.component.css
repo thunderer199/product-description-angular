@@ -1,0 +1,19 @@
+.jumbotron {
+  position: absolute;
+  width: 50%;
+  margin-left: 25%;
+  top: 50%;
+  padding: 25px;
+
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+
+.jumbotron form .form-group {
+  width: 100%;
+}
+
+.jumbotron form button {
+  width: 50%;
+  margin-left: 25%;
+}
