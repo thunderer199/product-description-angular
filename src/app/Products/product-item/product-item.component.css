@@ -1,3 +1,15 @@
-.panel-heading {
+.see-moore {
   cursor: pointer;
+  color: #709aff;
+  text-decoration: underline;
+
+  margin-left: 30px;
+}
+
+.panel-heading {
+  cursor: pointer;;
+}
+
+.image-block {
+  text-align: center;
 }
